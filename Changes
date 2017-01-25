@@ -1,4 +1,4 @@
-0.002   2017-01-25 (PERLANCAR) (unreleased)
+0.002   2017-01-25 (PERLANCAR)
 
         - Rename functions from {MIN,MAX}* to ARG{MIN,MAX}* to avoid confusion
           with aggregate functions.
