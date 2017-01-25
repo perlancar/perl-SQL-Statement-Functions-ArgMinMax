@@ -1,4 +1,4 @@
-package SQL::Statement::Function::ByName::MINNUM;
+package SQL::Statement::Function::ByName::ARGMINNUM;
 
 # DATE
 # VERSION
@@ -9,12 +9,12 @@ use warnings;
 
 use List::Util qw(min);
 
-sub SQL_FUNCTION_MINNUM {
+sub SQL_FUNCTION_ARGMINNUM {
     min(@_[2..$#_]);
 }
 
 1;
-# ABSTRACT: MINNUM() SQL function to return the (numerically) minimum parameter
+# ABSTRACT: SQL function to return the (numerically) minimum parameter
 
 =for Pod::Coverage .+
 

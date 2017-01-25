@@ -1,4 +1,4 @@
-package SQL::Statement::Function::ByName::MAXNUM;
+package SQL::Statement::Function::ByName::ARGMAXNUM;
 
 # DATE
 # VERSION
@@ -9,12 +9,12 @@ use warnings;
 
 use List::Util qw(max);
 
-sub SQL_FUNCTION_MAXNUM {
+sub SQL_FUNCTION_ARGMAXNUM {
     max(@_[2..$#_]);
 }
 
 1;
-# ABSTRACT: MAXNUM() SQL function to return the (numerically) maximum parameter
+# ABSTRACT: SQL function to return the (numerically) maximum parameter
 
 =for Pod::Coverage .+
 

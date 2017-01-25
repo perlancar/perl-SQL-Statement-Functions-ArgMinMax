@@ -1,4 +1,4 @@
-package SQL::Statement::Function::ByName::MAXSTR;
+package SQL::Statement::Function::ByName::ARGMAXSTR;
 
 # DATE
 # VERSION
@@ -9,12 +9,12 @@ use warnings;
 
 use List::Util qw(maxstr);
 
-sub SQL_FUNCTION_MAXSTR {
+sub SQL_FUNCTION_ARGMAXSTR {
     maxstr(@_[2..$#_]);
 }
 
 1;
-# ABSTRACT: MAXSTR() SQL function to return the (string-wise) maximum parameter
+# ABSTRACT: SQL function to return the (string-wise) maximum parameter
 
 =for Pod::Coverage .+
 

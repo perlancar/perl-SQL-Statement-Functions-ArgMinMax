@@ -14,23 +14,23 @@ sub get_func {
     \&{"SQL::Statement::Function::ByName::$name\::SQL_FUNCTION_$name"};
 }
 
-subtest MINSTR => sub {
-    my $func = get_func("MINSTR");
+subtest ARGMINSTR => sub {
+    my $func = get_func("ARGMINSTR");
     is_deeply($func->(undef, undef, 1, 10, 2, 3), 1);
 };
 
-subtest MAXSTR => sub {
-    my $func = get_func("MAXSTR");
+subtest ARGMAXSTR => sub {
+    my $func = get_func("ARGMAXSTR");
     is_deeply($func->(undef, undef, 1, 10, 2, 3), 3);
 };
 
-subtest MINNUM => sub {
-    my $func = get_func("MINSTR");
+subtest ARGMINNUM => sub {
+    my $func = get_func("ARGMINSTR");
     is_deeply($func->(undef, undef, 1, 10, 2, 3), 1);
 };
 
-subtest MAXNUM => sub {
-    my $func = get_func("MAXNUM");
+subtest ARGMAXNUM => sub {
+    my $func = get_func("ARGMAXNUM");
     is_deeply($func->(undef, undef, 1, 10, 2, 3), 10);
 };
 

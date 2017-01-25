@@ -1,4 +1,4 @@
-package SQL::Statement::Function::ByName::MINSTR;
+package SQL::Statement::Function::ByName::ARGMINSTR;
 
 # DATE
 # VERSION
@@ -9,12 +9,12 @@ use warnings;
 
 use List::Util qw(minstr);
 
-sub SQL_FUNCTION_MINSTR {
+sub SQL_FUNCTION_ARGMINSTR {
     minstr(@_[2..$#_]);
 }
 
 1;
-# ABSTRACT: MINSTR() SQL function to return the (string-wise) minimum parameter
+# ABSTRACT: SQL function to return the (string-wise) minimum parameter
 
 =for Pod::Coverage .+
 
